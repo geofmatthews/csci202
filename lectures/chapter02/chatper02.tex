@@ -1,0 +1,170 @@
+\documentclass{beamer}
+\usepackage{fancyvrb}
+\usepackage{hyperref}
+\usepackage{alltt}
+\usepackage{graphicx}
+
+\newtheorem{theo}{Theorem}[section]
+
+
+\newcommand{\myfig}[1]{\centerline{\includegraphics[scale=0.25]{figures/#1.png}}}
+\newcommand{\myfigt}[1]{\centerline{\includegraphics[scale=0.2]{figures/#1.png}}}
+
+\newcommand{\trans}[5]{
+\begin{tabular}{|c|c|c|c|c|}\hline
+#1 & #2 & #3 & #4 & #5 \\\hline
+\end{tabular}
+}
+
+\newcommand{\arr}{&\rightarrow&}
+\newcommand{\darr}{&\Rightarrow&}
+\newcommand{\ar}{\ensuremath{\rightarrow}}
+\newcommand{\dar}{\ensuremath{\Rightarrow}}
+\newcommand{\bee}{\begin{eqnarray*}}
+\newcommand{\eee}{\end{eqnarray*}}
+\newcommand{\emptystring}{\ensuremath{\epsilon}}
+
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\li}{\item}
+\newcommand{\ei}{\end{itemize}}
+
+\newcommand{\sect}[1]{
+\section{#1}
+\begin{frame}[fragile]\frametitle{#1}
+}
+\newcommand{\sectc}[1]{
+\section{#1}
+\begin{frame}[fragile]\frametitle{#1}
+\begin{columns}
+}
+\newcommand{\nc}[1]{\column{#1\textwidth}}
+\newcommand{\ec}{\end{columns}}
+
+\mode<presentation>
+{
+%  \usetheme{Madrid}
+  % or ...
+
+%  \setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+}
+
+\usepackage[english]{babel}
+
+\usepackage[latin1]{inputenc}
+
+\title[HTML5 and CSS3, Chapter 2]
+{
+HTML5 and CSS3, Chapter 2
+}
+
+\subtitle{} % (optional)
+
+\author[Geoffrey Matthews]
+{Geoffrey Matthews}
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[WWU/CS]
+{
+  Department of Computer Science\\
+  Western Washington University
+}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\date{\today}
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+%\pgfdeclareimage[height=0.5cm]{university-logo}{WWULogoProColor}
+%\logo{\pgfuseimage{university-logo}}
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command: 
+
+%\beamerdefaultoverlayspecification{<+->}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+\newcommand{\myref}[1]{\small\item\url{#1}}
+\newcommand{\myreft}[1]{\footnotesize\item\url{#1}}
+
+%\begin{frame}
+%  \frametitle{Outline}
+%  \tableofcontents
+%  % You might wish to add the option [pausesections]
+%\end{frame}
+
+\sect{HTML inherited many problems}
+
+\bi
+\li Browser manufacturers added exclusive features.
+\li The distinction between meaning and layout was blurred.
+\li Tables were used as a hack.
+\li People started using tools to write pages.
+\li The nature of the web was changing.
+\li XHTML tried to fix things.
+\li XHTML was difficult and complicated.
+\ei
+
+\end{frame}
+
+\sect{XHTML had some good ideas}
+
+\bi
+\li All tags have endings.
+\li Tags cannot be overlapped.
+\bi
+\li Bad: \verb|<a><b>my stuff</a></b>|
+\ei
+\li Everything's lowercase.
+\li Attributes must be in quotes.
+\li Layout must be separate from markup.
+\bi
+\li Bad: \verb|<font>|
+\li Bad: \verb|<center>|
+\ei
+\li HTML5 is slightly less strict, but preserves these rules.
+\ei
+\end{frame}
+
+\sect{Validation}
+
+\bi
+\li \url{https://validator.w3.org/}
+\ei
+\bi
+\li Syntax verification for HTML
+\li Can validate three ways:
+\bi
+\li by URL
+\li by file upload
+\li by direct input
+\ei
+\li Ox and Wheels example
+\ei
+
+\end{frame}
+
+\sect{Tidy}
+\bi
+\li \url{http://infohound.net/tidy/}
+\li Tidy doesn't just find the errors, it tries to fix them!
+\li Tidy outputs XHTML by default.
+\bi \li Deselect that box.\ei
+\li If Tidy gets confused, it may just remove tags.
+\li Set {\bf indent} to {\bf on}, so you can see if tags match up.
+\ei
+\end{frame}
+
+
+
+\end{document}

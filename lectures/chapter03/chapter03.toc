@@ -1,0 +1,15 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Dreamweaver ({\em etc.)}: Pros}{2}{0}{1}
+\beamer@sectionintoc {2}{Dreamweaver ({\em etc.)}: Cons}{3}{0}{2}
+\beamer@sectionintoc {3}{Online site builders}{4}{0}{3}
+\beamer@sectionintoc {4}{Roll your own webpage tools}{5}{0}{4}
+\beamer@sectionintoc {5}{Text editors to avoid}{6}{0}{5}
+\beamer@sectionintoc {6}{Suggested editors}{7}{0}{6}
+\beamer@sectionintoc {7}{A History of Web Browsers}{8}{0}{7}
+\beamer@sectionintoc {8}{Microsoft Internet Explorer}{9}{0}{8}
+\beamer@sectionintoc {9}{Mozilla Firefox}{10}{0}{9}
+\beamer@sectionintoc {10}{WebKit/Safari}{11}{0}{10}
+\beamer@sectionintoc {11}{Google Chrome}{12}{0}{11}
+\beamer@sectionintoc {12}{Opera}{13}{0}{12}
+\beamer@sectionintoc {13}{Text-only browsers}{14}{0}{13}

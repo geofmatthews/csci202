@@ -1,0 +1,325 @@
+\documentclass{beamer}
+\usepackage{fancyvrb}
+\usepackage{hyperref}
+\usepackage{alltt}
+\usepackage{graphicx}
+
+\newtheorem{theo}{Theorem}[section]
+
+
+\newcommand{\myfig}[1]{\centerline{\includegraphics[scale=0.25]{figures/#1.png}}}
+\newcommand{\myfigt}[1]{\centerline{\includegraphics[scale=0.2]{figures/#1.png}}}
+
+\newcommand{\trans}[5]{
+\begin{tabular}{|c|c|c|c|c|}\hline
+#1 & #2 & #3 & #4 & #5 \\\hline
+\end{tabular}
+}
+
+\newcommand{\arr}{&\rightarrow&}
+\newcommand{\darr}{&\Rightarrow&}
+\newcommand{\ar}{\ensuremath{\rightarrow}}
+\newcommand{\dar}{\ensuremath{\Rightarrow}}
+\newcommand{\bee}{\begin{eqnarray*}}
+\newcommand{\eee}{\end{eqnarray*}}
+\newcommand{\emptystring}{\ensuremath{\epsilon}}
+
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\li}{\item}
+\newcommand{\ei}{\end{itemize}}
+
+\newcommand{\sect}[1]{
+\section{#1}
+\begin{frame}[fragile]\frametitle{#1}
+}
+\newcommand{\sectc}[1]{
+\section{#1}
+\begin{frame}[fragile]\frametitle{#1}
+\begin{columns}
+}
+\newcommand{\nc}[1]{\column{#1\textwidth}}
+\newcommand{\ec}{\end{columns}}
+
+\mode<presentation>
+{
+%  \usetheme{Madrid}
+  % or ...
+
+%  \setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+}
+
+\usepackage[english]{babel}
+
+\usepackage[latin1]{inputenc}
+
+\title[HTML5 and CSS3, Chapter 1]
+{
+HTML5 and CSS3, Chapter 1
+}
+
+\subtitle{} % (optional)
+
+\author[Geoffrey Matthews]
+{Geoffrey Matthews}
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[WWU/CS]
+{
+  Department of Computer Science\\
+  Western Washington University
+}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\date{\today}
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+%\pgfdeclareimage[height=0.5cm]{university-logo}{WWULogoProColor}
+%\logo{\pgfuseimage{university-logo}}
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command: 
+
+%\beamerdefaultoverlayspecification{<+->}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+\newcommand{\myref}[1]{\small\item\url{#1}}
+\newcommand{\myreft}[1]{\footnotesize\item\url{#1}}
+
+%\begin{frame}
+%  \frametitle{Outline}
+%  \tableofcontents
+%  % You might wish to add the option [pausesections]
+%\end{frame}
+
+\sect{Links}
+
+\begin{itemize}
+
+\item \url{www.aharrisbooks.net/haio}
+
+  Book companion website
+\item \url{www.dummies.com/cheatsheet/html5css3aio}
+
+  Book cheatsheet
+
+
+\end{itemize}
+
+\end{frame}
+
+\sect{My first web page}
+
+  \begin{Verbatim}
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<!-- myFirst.html -->
+<title>My very first web page!</title>
+</head>
+<body>
+<h1>This is my first web page!</h1>
+<p>
+This is the first web page I've ever made,
+and I'm extremely proud of it.
+It is so cool!
+</p>
+</body>
+</html>
+\end{Verbatim}
+
+\end{frame}
+
+\sect{Points about HTML}
+\bi
+\item It uses plain text.
+\item It works on all computers.
+\item It describes what documents {\em mean}.
+\item It does not describe how documents {\em look}.
+\item It's easy to write.
+\item It's free.
+\ei
+
+\end{frame}
+
+\sect{DOCTYPE}
+\bi
+\li \verb|<!DOCTYPE HTML>|
+
+\li
+This special tag is used to inform the browser that
+the document type is HTML. This is how the browser knows you'll be
+writing an HTML5 document. You will sometimes see other values for
+the doctype, but HTML5 is the way to go these days.
+\ei
+\end{frame}
+
+\sect{html}
+\bi
+\li \verb|<html lang = "en"></html>|
+
+\li
+The \verb|<html>| tag is the foundation of
+the entire web page. The tag begins the page. Likewise, \verb|</html>| ends
+the page. For example, the page begins with \verb|<html>| and ends with
+\verb|</html>|. The \verb|<html></html>|
+combination indicates that everything
+in the page is defined as HTML code.
+
+In HTML5, you're expected to tell
+the browser which language the page will be written in. Because I write
+in English, I'm specifying with the code "en".
+
+\ei
+\end{frame}
+
+\sect{head}
+
+\bi
+\li \verb|<head></head>|
+
+\li
+These tags define a special part of the web page called
+the head (or sometimes header).  This is where you put some great stuff
+later, but it's not where the main document lives. For now, the only thing
+you'll put in the header is the document's title and charset.
+Later, you'll add styling
+information and programming code.
+\ei
+\end{frame}
+
+\sect{meta}
+\bi
+\li \verb|<meta charset="UTF-8">|
+
+\li
+The \verb|meta| tag is used to tell the browser
+which character set to use. Most of the web uses UTF-8. 
+
+\li
+\url{https://en.wikipedia.org/wiki/UTF-8}
+
+\ei
+\end{frame}
+
+\sect{Comments}
+
+\bi
+\li \verb|<!--   -->|
+\li This tag indicates a {\em comment}.  It is ignored by the browser
+but may help the developer understand what's going on.
+
+\ei
+
+\end{frame}
+
+\sect{title}
+\bi
+\li \verb|<title></title>|
+
+\li
+This tag is used to determine the page's title. The
+title usually contains ordinary text. Whatever you define as the title will
+appear in some special ways. Many browsers put the title text in the
+browser's title bar. Search engines often use the title to describe the page.
+
+\li Throughout the text, the filename of the HTML code is the
+title.   Typically, you'll use something more descriptive.
+
+\ei
+\end{frame}
+
+
+\sect{body}
+\bi
+\li \verb|<body></body>|
+
+\li The page's main content is contained within these
+tags. Most of the HTML code the user sees is in the body
+area. 
+\ei
+\end{frame}
+
+\sect{Headings}
+\bi
+\li \verb|<h1></h1>|
+
+\li \verb|h1| stands for {\em heading level one}. Any text contained
+within this markup is treated as a prominent headline. By default,
+most browsers add special formatting to anything defined as \verb|h1|, but
+there's no guarantee. An \verb|h1| heading doesn't really specify any
+particular font or formatting, just the meaning of the text as a level
+one heading.
+
+\li There are also headings at lower levels, \verb|h2|, \verb|h3|, {\em etc.}
+\ei
+\end{frame}
+
+\sect{Paragraphs}
+\bi
+\li \verb|<p>  </p>|
+
+\li \verb|p| is a paragraph tag.  Newlines and whitespace are largely
+ignored by HTML, because HTML is {\em not} designed to represent
+appearance.
+\ei
+\end{frame}
+
+\sect{General notes about tags}
+\bi
+\li Tags are lowercase.
+\li Tag pairs are containers, with a beginning and an end.
+\li Some elements can be repeated:
+\bi
+\li \verb|h1|
+\li \verb|p|
+\ei
+\li Some elements should have only one:
+\bi
+\li \verb|html|
+\li \verb|title|
+\li \verb|body|
+\ei
+\li Extra whitespace, including carriage returns, is ignored.
+\ei
+\end{frame}
+
+\sect{Test your pages on more than one browser}
+
+\bi
+\li Different browsers will make the same page look different.
+\li {\bf Chrome} is a good browser for developers, and free.
+\ei
+\end{frame}
+
+\sect{You never have complete control over the appearance}
+\bi
+\li The user may:
+\bi
+\li  have different size screen.
+\li  use different browser.
+\li  use different operating system.
+\li  have a slow internet and turn off graphics.
+\li  be blind and use screen-reader technology.
+\li  be using a phone or tablet.
+\li ...
+\ei
+\li Your document can only indicate how the information fits together
+and make suggestions about the visual design.
+
+\ei
+\end{frame}
+
+\end{document}

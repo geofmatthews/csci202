@@ -1,0 +1,17 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Links}{2}{0}{1}
+\beamer@sectionintoc {2}{My first web page}{3}{0}{2}
+\beamer@sectionintoc {3}{Points about HTML}{4}{0}{3}
+\beamer@sectionintoc {4}{DOCTYPE}{5}{0}{4}
+\beamer@sectionintoc {5}{html}{6}{0}{5}
+\beamer@sectionintoc {6}{head}{7}{0}{6}
+\beamer@sectionintoc {7}{meta}{8}{0}{7}
+\beamer@sectionintoc {8}{Comments}{9}{0}{8}
+\beamer@sectionintoc {9}{title}{10}{0}{9}
+\beamer@sectionintoc {10}{body}{11}{0}{10}
+\beamer@sectionintoc {11}{Headings}{12}{0}{11}
+\beamer@sectionintoc {12}{Paragraphs}{13}{0}{12}
+\beamer@sectionintoc {13}{General notes about tags}{14}{0}{13}
+\beamer@sectionintoc {14}{Test your pages on more than one browser}{15}{0}{14}
+\beamer@sectionintoc {15}{You never have complete control over the appearance}{16}{0}{15}

@@ -1,0 +1,9 @@
+\frametitle{Tidy} 
+\bi
+\li \url{http://infohound.net/tidy/}
+\li Tidy doesn't just find the errors, it tries to fix them!
+\li Tidy outputs XHTML by default.
+\bi \li Deselect that box.\ei
+\li If Tidy gets confused, it may just remove tags.
+\li Set {\bf indent} to {\bf on}, so you can see if tags match up.
+\ei

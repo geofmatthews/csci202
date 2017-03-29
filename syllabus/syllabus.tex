@@ -1,0 +1,174 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyvrb}
+\usepackage{multicol}
+\usepackage{color}
+\usepackage{longtable}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1ex}
+
+
+\newcommand{\myline}{\end{description}\hrulefill\begin{description}}
+\newcommand{\be}{\mbox{}\begin{itemize}}
+\newcommand{\ee}{\end{itemize}}
+           
+\begin{document}
+\centerline{\Large\bf CSCI 202: Dynamic Web Pages}
+\centerline{\large\bf Syllabus, Spring, 2017}
+
+
+\begin{description}
+
+
+\item[Instructor:] Geoffrey Matthews\\
+{\em Email:} {\tt geoffrey dot matthews at wwu dot edu}\\
+{\em Office hours:} MTWF 10:00-10:50, CF 469
+
+
+\item[Lectures:] MWF 9:00-9:50, CF 227
+
+
+\item[Catalog copy:] Principles and technologies required to produce
+  and distribute Internet (World Wide Web) content, with a focus on
+  site architecture and client-side dynamic pages; an introduction to
+  server-side processing. 
+
+
+\item[Goals:]  On completion of this course, students will demonstrate
+  basic understanding of:
+\begin{itemize}
+\item design and development of web pages using HTML and CSS
+\item the programming language Javascript
+\item the jQuery library
+\item the Document Object Model (DOM) for working with web pages using
+  Javascript
+\item forms and regular expressions
+\item data represented in XML and JSON
+\item creating webpages on the server with PHP
+\item interacting dynamically with a server using AJAX
+\end{itemize}
+
+
+\item[Websites:]\mbox{}
+\begin{itemize}
+  \item For class materials:
+    \url{https://github.com/geofmatthews/csci202} 
+  \item For turning in homework and grading:
+    \url{https://wwu.instructure.com/}  
+\end{itemize}
+
+\item[Text:] {\em HTML5 and CSS3 All-In-One for Dummies}, Andy Harris.
+
+\item[Software:]\mbox{}
+  
+  \begin{itemize}
+  \item \url{https://www.google.com/chrome/browser/desktop/index.html}
+
+    For client-side programming: HTML, CSS, Javascript
+  \item\url{https://www.apachefriends.org/index.html}
+
+    For server-side programming: PHP, Ajax
+  \end{itemize}
+
+\item[Labs:] Labs must be turned in on canvas on or before midnight of
+  the due date.  Specifications must be followed exactly.  No late
+  work will be accepted.  It is the student's responsibility to make
+  sure the {\em correct} file is submitted by midnight of the due
+  date.
+
+\item[Project:]  There will be a final project, which will be a
+  website using most of what you have learned during the quarter.
+
+\item[Exams:]\mbox{}
+  
+  \begin{description}
+  \item[Midterm:]  Friday, May 5.
+  \item[Final exam:] Wednesday, June 7, 10:30am - 12:30pm.
+    \begin{itemize}
+      \item Note:  this class does {\em not} include Tuesday or
+        Thursday for final exam scheduling purposes,
+        even if your lab meets on one of those days.
+    \end{itemize}
+  \end{description}
+  
+  The  exams are closed book, with the exception that you may consult
+  two pieces of paper during the exam.  You may write or print whatever
+  you wish on each side of these pieces of paper.
+
+\item[Emergencies:] If you have to miss an assignment deadline or an
+  exam because of a medical or other emergency notify me as soon as
+  possible and we will negotiate a substitute.  If you know in advance
+  that you have to miss a deadline, let me know at least a week in
+  advance.
+
+\item[Grading:] Students will be graded on the labs, the final
+  project, the midterm, and the final.  There will also be
+  some in-class pop quizzes (which are
+  unscheduled and which we will solve together in class).
+
+Grades will be assigned based on scores as shown.  At the discretion
+of the instructor, scores may be scaled.  Awarding $\pm$ is at the
+discretion of the instructor.
+
+\begin{tabular}{|c|c|c|c|c|c|}\hline
+Labs & Project & Pop quizzes & Midterm & Final \\\hline
+30\% & 20\% & 5\% & 20\% & 25\% \\\hline
+\end{tabular}
+
+\begin{tabular}{|c|c|c|c|c|c|}\hline
+\% & 90-100 & 80-89 & 70-79 & 60-69 & 0-60\\\hline
+Grade & A & B & C & D & F\\\hline
+\end{tabular}
+
+
+\item[Academic dishonesty:] Please read Appendix D of WWU's Catalog on
+  Academic Dishonesty.  It is available online at
+  \url{http://catalog.wwu.edu}.
+
+  Unless specified otherwise, all work for this course is meant to
+  be done {\bf individually.}  The work that you turn in for a grade
+  must be completely your own, or you will be guilty of academic
+  dishonesty and could receive an F for the course.
+
+  However, it can be a valiable learning experience to discuss
+  work with your fellow students, and this is encouraged.
+  However, after working with a colleague, {\bf you may not keep any
+    paper or electronic copies of anything you produced together!}
+  You may only keep your memories.  In particular, this means that
+  {\bf you may not ask for or give help while sitting in front of a
+    computer where the assignment is open!}  Also, {\bf you may not
+    use anything a colleague has emailed to you!}  Delete the email
+  and do not save a copy.
+
+  To help understand what I mean, remember the {\fbox{\bf Long Term
+    Memory Rule}}.  You may discuss, sketch, write things down, use
+  your computers, whatever, but after you are done working with your
+  fellow students all files must be deleted, whiteboards erased, and
+  all papers you created must be destroyed.  You should then watch a
+  rerun of {\em the Simpson's}, play a game of ping-pong, take a walk,
+  or something else for half an hour. After this you can go back to
+  your assignment (alone) and use the knowledge you have now gained.
+
+  It is very easy for us to detect copied assignments.  Please do not
+  put us in a situation where we have to fail you for plagiarism.
+
+\item[Schedule:] Topics may change slightly as the course progresses,
+  but I hope to cover the following sections of the textbook.  If we
+  finish early we will spend class time discussing the development of
+  your project.
+  
+  \begin{tabular}{|l|l|l|}\hline
+    Subject & Textbook & Dates \\\hline
+HTML & Part I & March 29 -- April 5 \\\hline
+ CSS & Parts II \& III & April 7 -- April 14 \\\hline
+ Javascript & Part IV & April 17 -- April 28 \\\hline
+ PHP & Part V & May 1 -- May 12 \\\hline
+ AJAX & Part VII & May 15 -- May 26 \\\hline
+\end{tabular}
+\end{description}
+
+
+\end{document}

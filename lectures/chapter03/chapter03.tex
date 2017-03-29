@@ -1,0 +1,261 @@
+\documentclass{beamer}
+\usepackage{fancyvrb}
+\usepackage{hyperref}
+\usepackage{alltt}
+\usepackage{graphicx}
+
+\newtheorem{theo}{Theorem}[section]
+
+
+\newcommand{\myfig}[1]{\centerline{\includegraphics[scale=0.25]{figures/#1.png}}}
+\newcommand{\myfigt}[1]{\centerline{\includegraphics[scale=0.2]{figures/#1.png}}}
+
+\newcommand{\trans}[5]{
+\begin{tabular}{|c|c|c|c|c|}\hline
+#1 & #2 & #3 & #4 & #5 \\\hline
+\end{tabular}
+}
+
+\newcommand{\arr}{&\rightarrow&}
+\newcommand{\darr}{&\Rightarrow&}
+\newcommand{\ar}{\ensuremath{\rightarrow}}
+\newcommand{\dar}{\ensuremath{\Rightarrow}}
+\newcommand{\bee}{\begin{eqnarray*}}
+\newcommand{\eee}{\end{eqnarray*}}
+\newcommand{\emptystring}{\ensuremath{\epsilon}}
+
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\li}{\item}
+\newcommand{\ei}{\end{itemize}}
+
+\newcommand{\sect}[1]{
+\section{#1}
+\begin{frame}[fragile]\frametitle{#1}
+}
+\newcommand{\sectc}[1]{
+\section{#1}
+\begin{frame}[fragile]\frametitle{#1}
+\begin{columns}
+}
+\newcommand{\nc}[1]{\column{#1\textwidth}}
+\newcommand{\ec}{\end{columns}}
+
+\mode<presentation>
+{
+%  \usetheme{Madrid}
+  % or ...
+
+%  \setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+}
+
+\usepackage[english]{babel}
+
+\usepackage[latin1]{inputenc}
+
+\title[HTML5 and CSS3, Chapter 3]
+{
+HTML5 and CSS3, Chapter 3
+}
+
+\subtitle{} % (optional)
+
+\author[Geoffrey Matthews]
+{Geoffrey Matthews}
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[WWU/CS]
+{
+  Department of Computer Science\\
+  Western Washington University
+}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\date{\today}
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+%\pgfdeclareimage[height=0.5cm]{university-logo}{WWULogoProColor}
+%\logo{\pgfuseimage{university-logo}}
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command: 
+
+%\beamerdefaultoverlayspecification{<+->}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+\newcommand{\myref}[1]{\small\item\url{#1}}
+\newcommand{\myreft}[1]{\footnotesize\item\url{#1}}
+
+%\begin{frame}
+%  \frametitle{Outline}
+%  \tableofcontents
+%  % You might wish to add the option [pausesections]
+%\end{frame}
+
+\sect{Dreamweaver ({\em etc.)}: Pros}
+\bi
+\li WYSIWYG editing.
+\li Templates
+\li Site management
+\ei
+
+\end{frame}
+
+\sect{Dreamweaver ({\em etc.)}: Cons}
+\bi
+\li Code maintenance
+\li Vendor lock-in
+\li Cost
+\li Complexity
+\bi\li \$400 and up, depending on packages \ei
+\li Code understandability
+\li Spotty standards compliance
+\li Display variations
+\bi \li WISIWYG is a lie \ei
+\li Incompatability with other tools
+\bi\li Content management systems \ei
+\ei
+\end{frame}
+
+\sect{Online site builders}
+\bi
+\li Some CMSs allow you to build and modify a web page right in the
+browser.
+\li Further discussion in Book VIII of your text.
+\li You should still learn HTML, CSS, {\em etc.}
+\ei
+\end{frame}
+
+\sect{Roll your own webpage tools}
+\bi
+\li Enhanced text editors.
+\li Browsers and plugins.
+\li Server software
+\bi\li Apache, PHP, MySQL, ...
+\ei
+\li Multimedia tools
+\bi
+\li images, videos, sounds, music, ...
+\ei
+\ei
+\end{frame}
+
+\sect{Text editors to avoid}
+\bi
+\li Microsoft Word
+\li Windows Notepad
+\li Mac TextEdit
+\ei
+\end{frame}
+
+\sect{Suggested editors}
+\bi
+\li\url{https://notepad-plus-plus.org/}
+\li\url{https://wiki.gnome.org/Apps/Gedit}
+\li\url{http://www.vim.org/}
+\li\url{https://www.gnu.org/software/emacs/}
+\li\url{http://www.activestate.com/komodo-edit}
+\ei
+\end{frame}
+
+
+\sect{A History of Web Browsers}
+\bi
+\li Mosaic/Netscape: the killer application
+\bi\li 97\% market share at peak\ei
+\li Microsoft Internet Explorer (IE)
+\bi
+\li First Browser War
+\li Each browser added incompatible features
+\li Microsoft eventually wins
+\li IE becomes {\em the} standard
+\ei
+\li Firefox shakes up the world
+\bi
+\li Compliance to W3C standards
+\li Tabbed browsing
+\li Easy customization
+\li Improved security
+\ei
+\li WebKit
+\bi
+\li Rendering engine used by both Safari and Chrome
+\ei
+\ei
+\end{frame}
+
+\sect{Microsoft Internet Explorer}
+\bi
+\li IE 10 has respectable HTML5 support.
+\li IE 6 was the standard for many years, but largely incompatible
+with new standards.
+\ei
+\end{frame}
+
+\sect{Mozilla Firefox}
+Improvement on IE from a programmer's point of view:
+\bi
+\li Better code view
+\li Better error-handling
+\li Great extensions
+\li Multi-platform support
+\ei
+\end{frame}
+
+\sect{WebKit/Safari}
+\bi
+\li Default for Mac, iPhone/iPad
+\li Built on WebKit, same as Chrome
+\ei
+\end{frame}
+
+\sect{Google Chrome}
+\bi
+\li Very fast, especially javascript
+\li Complies well with new standards
+\li Good developer toolkits available
+\li Developer features:
+\bi
+\li Real-time page editing
+\li Page outline
+\li Realtime CSS edit
+\li Network tab
+\bi\li how long does each piece of a page take to load?\ei
+\li Sources view
+\li Console
+\ei
+\ei
+\end{frame}
+
+\sect{Opera}
+\bi
+\li Very good HTML5 compliance
+\li Many game consoles and mobile devices use Opera
+\ei
+\end{frame}
+
+\sect{Text-only browsers}
+\bi
+\li Very fast.
+\li Auditory browsers read the contents of web pages.
+\li Useful to understand how pages are used by people with visual
+disabilities.
+\li Useful to understnad how pages are viewed by search engines.
+\ei
+\end{frame}
+
+
+
+
+\end{document}

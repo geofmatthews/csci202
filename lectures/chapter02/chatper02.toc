@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {english}
+\beamer@sectionintoc {1}{HTML inherited many problems}{2}{0}{1}
+\beamer@sectionintoc {2}{XHTML had some good ideas}{3}{0}{2}
+\beamer@sectionintoc {3}{Validation}{4}{0}{3}
+\beamer@sectionintoc {4}{Tidy}{5}{0}{4}

@@ -1,0 +1,16 @@
+\frametitle{You never have complete control over the appearance} 
+\bi
+\li The user may:
+\bi
+\li  have different size screen.
+\li  use different browser.
+\li  use different operating system.
+\li  have a slow internet and turn off graphics.
+\li  be blind and use screen-reader technology.
+\li  be using a phone or tablet.
+\li ...
+\ei
+\li Your document can only indicate how the information fits together
+and make suggestions about the visual design.
+
+\ei
