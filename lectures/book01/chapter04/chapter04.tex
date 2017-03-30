@@ -206,6 +206,57 @@ HTML5 and CSS3, Chapter 4
 \ei
 \end{frame}
 
+\sect{Spanning columns}
+
+\begin{Verbatim}
+<tr>
+  <th>Breakfast</th>
+  <td>In lair</td>
+  <td>with cronies</td>
+  <td>In lair</td>
+  <td>in lair</td>
+  <td>in lair</td>
+</tr>
+<tr>
+  <th>Morning</th>
+  <td colspan = "2">Design traps</td>
+  <td colspan = "3">Improve Hideout</td>
+</tr>
+\end{Verbatim}
+\end{frame}
+
+\sect{Spanning rows}
+\begin{Verbatim}
+<tr>
+  <th>Afternoon</th>
+  <td>train minions</td>
+  <td>train minions</td>
+  <td>train minions</td>
+  <td>train minions</td>
+  <td rowspan = "2">world domination</td>
+</tr>
+<tr>
+  <th>Evening</th>
+  <td>manaical laughter</td>
+  <td>manaical laughter</td>
+  <td>manaical laughter</td>
+  <td>manaical laughter</td>
+</tr>
+\end{Verbatim}
+\end{frame}
+
+\sect{Don't use tables for layout}
+\bi
+\li Old HTML didn't have layout facilities, so tables were used.
+\li Tables aren't meant for layout.
+\li The table code becomes complicated fast.
+\li Formatting is done cell by cell.
+\li Presentation is tied to data.
+\li Table-based layouts are hard to change.
+\li Table-based layouts cause problems for screen readers.
+\li Table-based layouts do not adapt well to phones and tablets.
+\ei
+\end{frame}
 
 
 \end{document}

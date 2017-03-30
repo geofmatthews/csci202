@@ -1,0 +1,245 @@
+\documentclass{beamer}
+\usepackage{fancyvrb}
+\usepackage{hyperref}
+\usepackage{alltt}
+\usepackage{graphicx}
+
+\newtheorem{theo}{Theorem}[section]
+
+
+\newcommand{\myfig}[1]{\centerline{\includegraphics[scale=0.25]{figures/#1.png}}}
+\newcommand{\myfigt}[1]{\centerline{\includegraphics[scale=0.2]{figures/#1.png}}}
+
+\newcommand{\trans}[5]{
+\begin{tabular}{|c|c|c|c|c|}\hline
+#1 & #2 & #3 & #4 & #5 \\\hline
+\end{tabular}
+}
+
+\newcommand{\arr}{&\rightarrow&}
+\newcommand{\darr}{&\Rightarrow&}
+\newcommand{\ar}{\ensuremath{\rightarrow}}
+\newcommand{\dar}{\ensuremath{\Rightarrow}}
+\newcommand{\bee}{\begin{eqnarray*}}
+\newcommand{\eee}{\end{eqnarray*}}
+\newcommand{\emptystring}{\ensuremath{\epsilon}}
+
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\li}{\item}
+\newcommand{\ei}{\end{itemize}}
+
+\newcommand{\sect}[1]{
+\section{#1}
+\begin{frame}[fragile]\frametitle{#1}
+}
+\newcommand{\sectc}[1]{
+\section{#1}
+\begin{frame}[fragile]\frametitle{#1}
+\begin{columns}
+}
+\newcommand{\nc}[1]{\column{#1\textwidth}}
+\newcommand{\ec}{\end{columns}}
+
+\mode<presentation>
+{
+%  \usetheme{Madrid}
+  % or ...
+
+%  \setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+}
+
+\usepackage[english]{babel}
+
+\usepackage[latin1]{inputenc}
+
+\title[HTML5 and CSS3, Chapter 5]
+{
+HTML5 and CSS3, Chapter 5
+}
+
+\subtitle{} % (optional)
+
+\author[Geoffrey Matthews]
+{Geoffrey Matthews}
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[WWU/CS]
+{
+  Department of Computer Science\\
+  Western Washington University
+}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\date{\today}
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+%\pgfdeclareimage[height=0.5cm]{university-logo}{WWULogoProColor}
+%\logo{\pgfuseimage{university-logo}}
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command: 
+
+%\beamerdefaultoverlayspecification{<+->}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+\newcommand{\myref}[1]{\small\item\url{#1}}
+\newcommand{\myreft}[1]{\footnotesize\item\url{#1}}
+
+%\begin{frame}
+%  \frametitle{Outline}
+%  \tableofcontents
+%  % You might wish to add the option [pausesections]
+%\end{frame}
+
+\sect{Source code from book}
+
+\bi
+\li \url{http://www.aharrisbooks.net/haio/}
+\ei
+\end{frame}
+
+\sect{Hyperlinks}
+\bi
+\li Any page can link to any other page.
+\li Clicking a hyperlink takes you to the other page.
+\li Some text or image or other element must be the trigger.
+\li The browser needs to know where to go.
+\li Links should look like links.
+  \bi
+  \li Default is underlined blue text
+  \li After they've been visited they change to purple.
+  \ei
+\li You can change the link's appearance, \\
+but make sure the user can still recognize it as a link!
+\ei
+
+\end{frame}
+
+\sect{The anchor tag}
+\begin{Verbatim}
+One of my favorite websites is called
+<a href = "http://www.wikipedia.org">wikipedia.</a>
+This is a terrific site.
+\end{Verbatim}
+\bi
+\li The web address is an attribute, in quotes.
+\li The highlighted text occurs between the \verb|<a>| and the \verb|</a>|.
+\li The anchor tag is embedded into normal text.
+\li The text will flow around the anchor.
+\li This is an {\bf inline} element.
+\li Other tags, such as \verb|<h1>| and \verb|<p>| are {\bf block-level}.
+\ei
+
+\end{frame}
+
+\sect{URLs}
+
+\bi
+\li
+\begin{Verbatim}[frame=single]
+http://www.google.com
+\end{Verbatim}
+\li URL:  Uniform Resource Locator.
+\li URI:  Uniform Resource Identifier.
+\li Protocol: \verb|http://|
+\li Host name: \verb|www|
+\bi\li The name of the computer
+\li Does not have to be {\tt www}\ei
+\li Domain name: \verb|.com|
+\li Subdomain: \verb|google|
+\bi\li Everything between the {\tt www.} and the {\tt .com}\ei
+\ei
+
+\end{frame}
+
+\sect{URLs with pages}
+\bi
+\li \begin{Verbatim}[frame=single]
+https://cse.wwu.edu/computer-science/matthews
+\end{Verbatim}
+\li Sometimes the address specifies a particular document on the
+server.
+\li Document name can include path, including containing folders.
+\li Page name is usually optional.  Many servers have a default:
+\bi
+\li {\tt index.html}
+\li {\tt home.htm}
+\ei
+\ei
+\end{frame}
+
+\sect{Common domains}
+\begin{center}
+\begin{tabular}{ll}
+  Domain & Explanation \\\hline
+  {\tt .org} & Non-profit institution \\\hline
+  {\tt .com} & Commercial enterprise \\\hline
+  {\tt .edu} & Educational institution \\\hline
+  {\tt .gov} & Governmental institution \\\hline
+  {\tt .ca} & Canada \\\hline
+  {\tt .uk} & United Kingdom \\\hline
+  {\tt .tv} & Tuvalu
+\end{tabular}
+\end{center}
+
+\end{frame}
+
+
+\sect{Lists of links}
+\begin{Verbatim}
+<ul>
+  <li><a href = "http://www.aharrisbooks.net/haio">
+      HTML / CSS / JavaScript ALL in One for Dummies</a>
+      A complete resource to web development</li>
+  <li><a href = "http://www.aharrisbooks.net/jad">
+      JavaScript / AJAX for Dummies</a>
+      Using JavaScript, AJAX, and jQuery</li>
+  <li><a href="http://www.aharrisbooks.net/pythonGame">
+      Game Programming - the L Line</a>
+      Game development in Python</li>
+  <li><a href="http://www.aharrisbooks.net/h5g">
+      HTML5 Game Development for Dummies</a>
+      Building web and mobile games in HTML5</li>
+</ul>
+\end{Verbatim}
+\bi
+\li Indentation can keep things clear.
+\ei
+
+\end{frame}
+
+\sect{Absolute {\em vs.} Relative References}
+
+\begin{Verbatim}
+  <a href="https://www.google.com/">
+  Google, on another server.
+  </a>
+
+
+  <a href="anotherpage.html">
+  A page, on the same server, same folder.
+  </a>
+
+
+  <a href="myfolder/page.html">
+  A page, on this server, in a subfolder.
+  </a>
+\end{Verbatim}
+\end{frame}
+
+
+
+
+\end{document}

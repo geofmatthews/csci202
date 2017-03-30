@@ -1,0 +1,10 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Source code from book}{2}{0}{1}
+\beamer@sectionintoc {2}{Hyperlinks}{3}{0}{2}
+\beamer@sectionintoc {3}{The anchor tag}{4}{0}{3}
+\beamer@sectionintoc {4}{URLs}{5}{0}{4}
+\beamer@sectionintoc {5}{URLs with pages}{6}{0}{5}
+\beamer@sectionintoc {6}{Common domains}{7}{0}{6}
+\beamer@sectionintoc {7}{Lists of links}{8}{0}{7}
+\beamer@sectionintoc {8}{Absolute {\em vs.} Relative References}{9}{0}{8}

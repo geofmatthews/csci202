@@ -1,10 +1,11 @@
-\frametitle{Building a table} 
+\frametitle{Don't use tables for layout} 
 \bi
-\li Plan ahead.
-\li Create the headings.
-\li Build a sample empty row.
-\li Copy and paste the empty row to make as many  as you need.
-\li Save, view, and validate.
-\li Populate the table with the data.
-\li Test and validate again.
+\li Old HTML didn't have layout facilities, so tables were used.
+\li Tables aren't meant for layout.
+\li The table code becomes complicated fast.
+\li Formatting is done cell by cell.
+\li Presentation is tied to data.
+\li Table-based layouts are hard to change.
+\li Table-based layouts cause problems for screen readers.
+\li Table-based layouts do not adapt well to phones and tablets.
 \ei

@@ -1,0 +1,17 @@
+\frametitle{Absolute {\em vs.} Relative References} 
+
+\begin{Verbatim}
+  <a href="https://www.google.com/">
+  Google, on another server.
+  </a>
+
+
+  <a href="anotherpage.html">
+  A page, on the same server, same folder.
+  </a>
+
+
+  <a href="myfolder/page.html">
+  A page, on this server, in a subfolder.
+  </a>
+\end{Verbatim}

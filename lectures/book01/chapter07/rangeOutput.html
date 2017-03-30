@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+  <title>rangeOutput.html</title>
+  <meta charset = "UTF-8" />
+  <script type = "text/javascript">
+  //<![CDATA[
+  function updateOutput(){
+    //get elements
+    var myRange = document.getElementById("myRange");
+    var myOutput = document.getElementById("myOutput");
+    
+    //copy the value over
+    myOutput.value = myRange.value;
+  } // end function
+
+  //]]>
+  </script>
+</head>
+
+<body>
+  <h1>Demonstrate a range paired with an output</h1>
+
+  <form action = "">
+    <fieldset>
+      <input id = "myRange"
+             type = "range"
+             min = "0"
+             max = "255"
+             value = "128" 
+             onchange = "updateOutput()" />
+
+      <output id = "myOutput">128</output>
+    </fieldset>
+  </form>
+    
+</body>
+</html>
