@@ -1,0 +1,241 @@
+\documentclass{beamer}
+\usepackage{fancyvrb}
+\usepackage{hyperref}
+\usepackage{alltt}
+\usepackage{graphicx}
+
+\newtheorem{theo}{Theorem}[section]
+
+
+\newcommand{\myfig}[1]{\centerline{\includegraphics[scale=0.25]{figures/#1.png}}}
+\newcommand{\myfigt}[1]{\centerline{\includegraphics[scale=0.2]{figures/#1.png}}}
+
+\newcommand{\trans}[5]{
+\begin{tabular}{|c|c|c|c|c|}\hline
+#1 & #2 & #3 & #4 & #5 \\\hline
+\end{tabular}
+}
+
+\newcommand{\arr}{&\rightarrow&}
+\newcommand{\darr}{&\Rightarrow&}
+\newcommand{\ar}{\ensuremath{\rightarrow}}
+\newcommand{\dar}{\ensuremath{\Rightarrow}}
+\newcommand{\bee}{\begin{eqnarray*}}
+\newcommand{\eee}{\end{eqnarray*}}
+\newcommand{\emptystring}{\ensuremath{\epsilon}}
+
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\li}{\item}
+\newcommand{\ei}{\end{itemize}}
+
+\newcommand{\sect}[1]{
+\section{#1}
+\begin{frame}[fragile]\frametitle{#1}
+}
+\newcommand{\sectc}[1]{
+\section{#1}
+\begin{frame}[fragile]\frametitle{#1}
+\begin{columns}
+}
+\newcommand{\nc}[1]{\column{#1\textwidth}}
+\newcommand{\ec}{\end{columns}}
+
+\mode<presentation>
+{
+%  \usetheme{Madrid}
+  % or ...
+
+%  \setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+}
+
+\usepackage[english]{babel}
+
+\usepackage[latin1]{inputenc}
+
+\title[HTML5 and CSS3, Chapter 6]
+{
+HTML5 and CSS3, Chapter 6
+}
+
+\subtitle{} % (optional)
+
+\author[Geoffrey Matthews]
+{Geoffrey Matthews}
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[WWU/CS]
+{
+  Department of Computer Science\\
+  Western Washington University
+}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\date{\today}
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+%\pgfdeclareimage[height=0.5cm]{university-logo}{WWULogoProColor}
+%\logo{\pgfuseimage{university-logo}}
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command: 
+
+%\beamerdefaultoverlayspecification{<+->}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+\newcommand{\myref}[1]{\small\item\url{#1}}
+\newcommand{\myreft}[1]{\footnotesize\item\url{#1}}
+
+%\begin{frame}
+%  \frametitle{Outline}
+%  \tableofcontents
+%  % You might wish to add the option [pausesections]
+%\end{frame}
+
+\sect{Source code from book}
+
+\bi
+\li \url{http://www.aharrisbooks.net/haio/}
+\ei
+\end{frame}
+
+\sect{Main uses of images}
+
+\bi
+\li External link
+\li Embedded images
+\li Background images
+\li Custom bullets
+\ei
+
+\end{frame}
+
+\sect{External links}
+\begin{Verbatim}[frame=single]
+<h1>Linking to an External Image</h1>
+<p>
+  <a href = "shipStandard.jpg">
+  Susan B. Constant
+  </a>
+</p>
+\end{Verbatim}
+\bi
+\li Are easy to create.
+\li They don't preview the image.
+\li They interrupt the flow.
+\li The user must use the back button to return to the original page.
+\ei
+\end{frame}
+
+\sect{Inline images}
+
+\begin{Verbatim}[frame=single]
+<h1>The Susan B. Constant</h1>
+<p>
+  <img src = "shipStandard.jpg"
+       height = "480"
+       width = "640"
+       alt = "Susan B. Constant" />
+</p>
+\end{Verbatim}
+\bi
+\li \verb|<img ... />| tag has only attributes, there is no \verb|</img>|.
+\li {\tt src} can be absolute or relative.
+\li {\tt height} and {\tt width} should not be used to resize images
+\bi\li  Browser can format the page before the image downloads\ei
+\li {\tt alt} used by screen readers and search engines.
+\bi\li {\tt alt} is {\em required} on all images\ei
+\li {\tt <img />} is an inline tag, so it must be inside a block tag.
+\ei
+
+\end{frame}
+
+\sect{Images}
+\bi
+\li My current camera's resolution: $3648 \times 2736$.
+\li My computer monitor's resolution: $1680 \times 1050$.
+\li Some browsers will just show you a corner of the image, with
+scrollbars.     
+\li Some browsers will automatically resize the image to fit,
+and will show full image on click.
+\li Downloading and resizing large images takes time.
+\li Use image processing software to resize images for the web.
+\bi
+\li IrfanView, XnView, GimpShop
+\li $320\times 240$
+\li $640\times 480$
+\li $1024\times 768$
+\ei
+\li Use a compressed format, such as {\tt jpg}
+\li Learn how to do batch processing.
+\ei
+\end{frame}
+
+\sect{Image formats}
+\begin{description}
+  \li[gif] Used for transparency or animation.  Don't use for photos.
+  \li[jpg] Good for photos.  Text in {\tt jpg} can become blurry.
+  \li[png] Good for most situations.
+  \li[svg] Vector graphics, not images.  Can be re-sized without loss
+  of quality.
+  \li[bmp] Avoid this and other legacy formats.
+\end{description}
+\end{frame}
+
+\sect{Audio}
+\begin{Verbatim}[frame=single]
+<audio controls = "controls">
+  <source src = "Allemande.mp3" type = "audio/mpeg">
+  <source src = "Allemande.ogg" type = "audio/ogg">
+    Your browser does not support HTML5 Audio
+    Please use this link instead:
+  <a href = "Allemande.mp3">Allemande.mp3</a>
+</audio>
+\end{Verbatim}
+\bi
+\li Different browsers support different formats.
+\li Provide alternatives for the {\tt source}.
+\li Anything after the sources will be used if the browser can't
+handle any of the available formats.
+\li Audio processing software:  \url{http://www.audacityteam.org/}
+
+\ei
+\end{frame}
+
+
+\sect{Video}
+\begin{Verbatim}[frame=single]
+<video src = "bigBuck.ogv"
+       controls = "controls">
+  Your browser does not support embedded video
+  through HTML 5.
+</video>
+\end{Verbatim}
+\bi
+\li Videos are extremely large.
+\li A better alternative is a link to YouTube.
+\ei
+
+\end{frame}
+
+\sect{Intellectual property}
+\bi
+\li Be sure you have permission to use images, audio, and video from
+the web.
+\li Just because you {\em can} embed some artwork, doesn't mean you
+    {\em should}.
+\ei
+\end{frame}    
+
+\end{document}

@@ -1,0 +1,197 @@
+\documentclass{beamer}
+\usepackage{fancyvrb}
+\usepackage{hyperref}
+\usepackage{alltt}
+\usepackage{graphicx}
+
+\newtheorem{theo}{Theorem}[section]
+
+
+\newcommand{\myfig}[1]{\centerline{\includegraphics[scale=0.25]{figures/#1.png}}}
+\newcommand{\myfigt}[1]{\centerline{\includegraphics[scale=0.2]{figures/#1.png}}}
+
+\newcommand{\trans}[5]{
+\begin{tabular}{|c|c|c|c|c|}\hline
+#1 & #2 & #3 & #4 & #5 \\\hline
+\end{tabular}
+}
+
+\newcommand{\arr}{&\rightarrow&}
+\newcommand{\darr}{&\Rightarrow&}
+\newcommand{\ar}{\ensuremath{\rightarrow}}
+\newcommand{\dar}{\ensuremath{\Rightarrow}}
+\newcommand{\bee}{\begin{eqnarray*}}
+\newcommand{\eee}{\end{eqnarray*}}
+\newcommand{\emptystring}{\ensuremath{\epsilon}}
+
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\li}{\item}
+\newcommand{\ei}{\end{itemize}}
+
+\newcommand{\sect}[1]{
+\section{#1}
+\begin{frame}[fragile]\frametitle{#1}
+}
+\newcommand{\sectc}[1]{
+\section{#1}
+\begin{frame}[fragile]\frametitle{#1}
+\begin{columns}
+}
+\newcommand{\nc}[1]{\column{#1\textwidth}}
+\newcommand{\ec}{\end{columns}}
+
+\mode<presentation>
+{
+%  \usetheme{Madrid}
+  % or ...
+
+%  \setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+}
+
+\usepackage[english]{babel}
+
+\usepackage[latin1]{inputenc}
+
+\title[HTML5 and CSS3, Chapter 7]
+{
+HTML5 and CSS3, Chapter 7
+}
+
+\subtitle{} % (optional)
+
+\author[Geoffrey Matthews]
+{Geoffrey Matthews}
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[WWU/CS]
+{
+  Department of Computer Science\\
+  Western Washington University
+}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\date{\today}
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+%\pgfdeclareimage[height=0.5cm]{university-logo}{WWULogoProColor}
+%\logo{\pgfuseimage{university-logo}}
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command: 
+
+%\beamerdefaultoverlayspecification{<+->}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+\newcommand{\myref}[1]{\small\item\url{#1}}
+\newcommand{\myreft}[1]{\footnotesize\item\url{#1}}
+
+%\begin{frame}
+%  \frametitle{Outline}
+%  \tableofcontents
+%  % You might wish to add the option [pausesections]
+%\end{frame}
+
+\sect{Source code from book}
+
+\bi
+\li \url{http://www.aharrisbooks.net/haio/}
+\ei
+\end{frame}
+
+\sect{Forms}
+\bi
+\li Forms are used to provide input from the user.
+\li This section of the book shows how to build forms.
+\li In order to {\em do} something with the data, we need a
+programming language.
+\li In Part IV we use Javascript on the client to do something.
+\li in Part V we use PHP on the server to do something.
+\li Consider this part a reference for later.
+\ei
+\end{frame}
+
+\sect{Types of forms}
+\bi
+\li Text boxes
+\li Password boxes
+\li Text areas
+\li Select lists
+\li Check boxes
+\li Radio buttons
+\li Buttons
+\li Labels
+\li Fieldsets and legends
+\ei
+\end{frame}
+
+\sect{Basic elements of a form}
+\begin{Verbatim}[frame=single]
+    <h1>A basic form</h1>
+    <form action = "">
+      <h2>Form elements go here</h2>
+      <h3>Other HTML is fine, too.</h3>
+      <p>
+        <input type = "text"
+             value = "googoo" />
+      </p>
+    </form>
+    
+    <p>
+      Note this code is slightly improved from book
+      version. I've placed the input
+      element inside the form
+      tag.  Thanks to Jim for the catch!
+    </p>
+\end{Verbatim}  
+
+\end{frame}    
+
+\sect{Organizing a form with fieldsets}
+\begin{Verbatim}[frame=single]
+    <h1>Sample Form with a Fieldset</h1>
+    <form action = "">
+      <fieldset>
+        <legend>Personal Data</legend>
+        <p>
+          <label>Name</label>
+          <input type = "text" />
+        </p>
+        <p>
+          <label>Address</label>
+          <input type = "text" />
+        </p>
+        <p>
+          <label>Phone</label>
+          <input type = "text" />
+        </p>
+      </fieldset>
+    </form>
+\end{Verbatim}
+\end{frame}
+
+\sect{Fieldsets}
+\bi
+\li Not necessary, but group parts of a form.
+\li Legend identifies the entire form.
+\li Label identifies each input form.
+\li Can use paragraphs to group labels and inputs.
+\li Label tag can have a {\tt for} attribute to connect with a
+specific input.
+\ei
+\end{frame}
+
+
+\end{document}
+

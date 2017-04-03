@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang = "en-US"> 
+
+  <head>
+    <meta charset = "UTF-8">
+    <title>basicForm.html</title>
+  </head>
+  <body>
+    <h1>A basic form</h1>
+    <form action = "">
+      <h2>Form elements go here</h2>
+      <h3>Other HTML is fine, too.</h3>
+      <p>
+        <input type = "text"
+             value = "googoo" />
+      </p>
+    </form>
+    
+    <p>
+      Note this code is slightly improved from book
+      version. I've placed the input element inside the form
+      tag.  Thanks to Jim for the catch!
+    </p>
+  </body>
+</html>

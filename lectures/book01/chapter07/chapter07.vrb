@@ -1,0 +1,9 @@
+\frametitle{Fieldsets} 
+\bi
+\li Not necessary, but group parts of a form.
+\li Legend identifies the entire form.
+\li Label identifies each input form.
+\li Can use paragraphs to group labels and inputs.
+\li Label tag can have a {\tt for} attribute to connect with a
+specific input.
+\ei

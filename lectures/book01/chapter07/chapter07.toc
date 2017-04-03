@@ -1,0 +1,8 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Source code from book}{2}{0}{1}
+\beamer@sectionintoc {2}{Forms}{3}{0}{2}
+\beamer@sectionintoc {3}{Types of forms}{4}{0}{3}
+\beamer@sectionintoc {4}{Basic elements of a form}{5}{0}{4}
+\beamer@sectionintoc {5}{Organizing a form with fieldsets}{6}{0}{5}
+\beamer@sectionintoc {6}{Fieldsets}{7}{0}{6}
