@@ -192,6 +192,217 @@ specific input.
 \ei
 \end{frame}
 
+\sect{A standard text form}
+\begin{Verbatim}[frame=single]
+    <form action = "">
+      <p>
+        <label>Name</label>
+        <input type = "text"
+               id = "txtName"
+               value = "Jonas"/>
+               </p>
+    </form>
+\end{Verbatim}
+\end{frame}
+
+\sect{Text form attributes}
+\bi
+\li {\tt type}: determines the general type of input.
+\bi\li text\li password\li {\em etc.}\ei
+\li {\tt id}: when we deal with the data, the program has to know the
+name (identifier) of the data.
+\li {\tt value:} default value.
+\li {\tt size:} number of characters displayed.
+\li {\tt maxlength:} largest number of characters allowed.
+\ei
+\end{frame}
+
+\sect{Password}
+\begin{Verbatim}[frame=single]
+      <fieldset>
+        <legend>Enter a password</legend>
+        <p>
+          <label>Type password here</label>
+          <input type = "password"
+                 id = "pwd"
+                 value = "secret" />
+        </p>
+      </fieldset>
+\end{Verbatim}
+\bi
+\li Replaces visible text characters with asterisks.
+\li Provices {\em no} security except for people looking over your
+shoulder.
+\li SSL (Secure Socket Layer) provides real security.
+\ei
+
+\end{frame}
+
+
+\sect{Multi-line text input}
+\begin{Verbatim}[frame=single]
+        <p>
+          <label>
+            Please enter the sum total of
+            Western thought. Be brief.
+          </label>
+        </p>
+        <p>
+          <textarea id = "txtAnswer"
+                    rows = "10"
+                    cols = "40"></textarea>
+        </p>
+\end{Verbatim}
+
+\bi
+\li It needs an {\tt id}
+\li Specify the size with {\tt rows} and {\tt cols}.
+\li The content goes between the tags.
+\li Whitespace between the tags goes in the output.
+\ei
+\end{frame}
+
+\sect{Drop-down selections}
+\begin{Verbatim}[frame=single]
+<label>What is your favorite color?</label>
+<select id = "selColor">
+  <option value = "#ff0000">Red</option>
+  <option value = "#00ff00">Green</option>
+  <option value = "#0000ff">Blue</option>
+  <option value = "#00ffff">Cyan</option>
+  <option value = "#ff00ff">Magenta</option>
+  <option value = "#ffff00">Yellow</option>
+  <option value = "#000000">Black</option>
+  <option value = "#ffffff">White</option>
+</select>
+\end{Verbatim}
+\bi
+\li Saves screen space.
+\li Limits input.
+\li The value can be different from what the user sees.
+\ei
+\end{frame}
+
+
+\sect{Check boxes}
+\begin{Verbatim}[frame=single]
+        <p>
+          <input type = "checkbox"
+                 id = "chkPeace"
+                 value = "peace" />
+          World peace
+        </p>
+        <p>
+          <input type = "checkbox"
+                 id = "chkHarmony"
+                 value = "harmony" />
+          Harmony and brotherhood
+        </p>
+        <p>
+          <input type = "checkbox"
+                 id = "chkCash"
+                 value = "cash" />
+          Cash
+        </p>
+\end{Verbatim}
+\end{frame}
+
+\sect{This all seems inconsistent}
+\bi
+\li Forms are inconsistent:
+\bi 
+\li Sometimes the value of a form element is visible to the users,
+ sometimes not.
+\li Sometimes the text the user sees is inside the tag,
+sometimes not.
+\ei
+\li The standards for HTML evolved over time.
+\li It's difficult to change a pattern that has thousands or millions
+of uses.
+\li It's best to consult an example any time you have to use
+one of thses.
+\ei
+\end{frame}
+
+\sect{Radio buttons}
+\begin{Verbatim}[frame=single]
+   <p>    <input type = "radio"
+                 name = "radPrice"
+                 id = "rad100"
+                 value = "100" />Too much       </p>
+   <p>    <input type = "radio"
+                 name = "radPrice"
+                 id = "rad200"
+                 value = "200" />Way too much   </p>
+   <p>    <input type = "radio"
+                 name = "radPrice"
+                 id = "rad5000"
+                 value = "5000"
+                 checked = "checked" />
+          You've got to be kidding.             </p>
+        \end{Verbatim}
+\end{frame}
+
+\sect{Radio buttons}
+\bi
+\li Only one can be checked at a time.
+\li They have to be in a group.
+\li They have to be the same name!
+\bi\li This creates the group. \ei
+\li You can have more than one group, just use different names.
+\li One of them has to be checked.
+\ei
+\end{frame}
+
+\sect{Other buttons}
+\begin{Verbatim}[frame=single]
+        <legend>
+          input-style buttons
+        </legend>
+        <input type = "button"
+               value = "input type = button" />
+        <input type = "submit" />
+        <input type = "reset" />
+      </fieldset>
+      <fieldset>
+        <legend>button tag buttons</legend>
+        <button type = "button">
+          button tag
+        </button>
+        <button>
+          <img src = "clickMe.gif"
+               alt = "click me" />
+        </button>
+\end{Verbatim}
+\end{frame}
+
+\sect{Button tags {\em vs.} button attributes}
+\bi
+\li The {\tt type} determines the style.
+\li The caption goes in the block.
+\li You can incorporate other elements.
+\ei
+\end{frame}
+
+\sect{New form input types}
+\bi
+\li date
+\li time
+\li datetime
+\li datetime-local
+\li week
+\li month
+\li color
+\li number
+\li range
+\li search
+\li email
+\li tel
+\li url
+\ei
+\end{frame}
+
+
 
 \end{document}
 

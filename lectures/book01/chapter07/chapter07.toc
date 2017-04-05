@@ -6,3 +6,15 @@
 \beamer@sectionintoc {4}{Basic elements of a form}{5}{0}{4}
 \beamer@sectionintoc {5}{Organizing a form with fieldsets}{6}{0}{5}
 \beamer@sectionintoc {6}{Fieldsets}{7}{0}{6}
+\beamer@sectionintoc {7}{A standard text form}{8}{0}{7}
+\beamer@sectionintoc {8}{Text form attributes}{9}{0}{8}
+\beamer@sectionintoc {9}{Password}{10}{0}{9}
+\beamer@sectionintoc {10}{Multi-line text input}{11}{0}{10}
+\beamer@sectionintoc {11}{Drop-down selections}{12}{0}{11}
+\beamer@sectionintoc {12}{Check boxes}{13}{0}{12}
+\beamer@sectionintoc {13}{This all seems inconsistent}{14}{0}{13}
+\beamer@sectionintoc {14}{Radio buttons}{15}{0}{14}
+\beamer@sectionintoc {15}{Radio buttons}{16}{0}{15}
+\beamer@sectionintoc {16}{Other buttons}{17}{0}{16}
+\beamer@sectionintoc {17}{Button tags {\em vs.} button attributes}{18}{0}{17}
+\beamer@sectionintoc {18}{New form input types}{19}{0}{18}

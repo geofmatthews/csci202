@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.31)  3 APR 2017 08:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.31)  5 APR 2017 08:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**chapter07.tex
+**chapter07
 (./chapter07.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 5 language(s) loaded.
@@ -956,6 +956,73 @@ Overfull \vbox (10.3267pt too high) detected at line 182
  (./chapter07.vrb) [7
 
 ]
+\openout4 = `chapter07.vrb'.
+
+ (./chapter07.vrb) [8
+
+]
+\openout4 = `chapter07.vrb'.
+
+ (./chapter07.vrb) [9
+
+]
+\openout4 = `chapter07.vrb'.
+
+
+(./chapter07.vrb) [10
+
+]
+\openout4 = `chapter07.vrb'.
+
+ (./chapter07.vrb) [11
+
+]
+\openout4 = `chapter07.vrb'.
+
+ (./chapter07.vrb) [12
+
+]
+\openout4 = `chapter07.vrb'.
+
+
+(./chapter07.vrb)
+Overfull \vbox (10.3267pt too high) detected at line 308
+ []
+
+[13
+
+]
+\openout4 = `chapter07.vrb'.
+
+ (./chapter07.vrb) [14
+
+]
+\openout4 = `chapter07.vrb'.
+
+ (./chapter07.vrb) [15
+
+]
+\openout4 = `chapter07.vrb'.
+
+ (./chapter07.vrb) [16
+
+]
+\openout4 = `chapter07.vrb'.
+
+
+(./chapter07.vrb) [17
+
+]
+\openout4 = `chapter07.vrb'.
+
+ (./chapter07.vrb) [18
+
+]
+\openout4 = `chapter07.vrb'.
+
+ (./chapter07.vrb) [19
+
+]
 \tf@nav=\write7
 \openout7 = `chapter07.nav'.
 
@@ -965,11 +1032,12 @@ Overfull \vbox (10.3267pt too high) detected at line 182
 \tf@snm=\write9
 \openout9 = `chapter07.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 196.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 196.
- (./chapter07.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 196.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 196.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 407.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 407.
+
+(./chapter07.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 407.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 407.
 
 
 Package rerunfilecheck Warning: File `chapter07.out' has changed.
@@ -977,32 +1045,34 @@ Package rerunfilecheck Warning: File `chapter07.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `chapter07.out':
-(rerunfilecheck)             Before: 609500309F53364CFA6120F12D4C829F;271
-(rerunfilecheck)             After:  CE9E92A47AF6717A9A9CE1FD03A89FB3;315.
+(rerunfilecheck)             Before: DF5888873F30CE33BBEFF3AB0904420A;915
+(rerunfilecheck)             After:  474115DC88130367B40CB967D797458B;972.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 196.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 407.
  ) 
 Here is how much of TeX's memory you used:
- 17273 strings out of 494910
- 325428 string characters out of 6179836
- 407118 words of memory out of 5000000
- 20134 multiletter control sequences out of 15000+600000
- 11422 words of font info for 43 fonts, out of 8000000 for 9000
+ 17431 strings out of 494910
+ 327606 string characters out of 6179836
+ 407119 words of memory out of 5000000
+ 20231 multiletter control sequences out of 15000+600000
+ 12442 words of font info for 46 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 48i,14n,51p,410b,551s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,14n,51p,406b,551s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on chapter07.pdf (7 pages, 77970 bytes).
+xmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/symbols/msam7.pfb>
+Output written on chapter07.pdf (19 pages, 119666 bytes).
 PDF statistics:
- 248 PDF objects out of 1000 (max. 8388607)
- 224 compressed objects within 3 object streams
- 21 named destinations out of 1000 (max. 500000)
- 83 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 617 PDF objects out of 1000 (max. 8388607)
+ 576 compressed objects within 6 object streams
+ 57 named destinations out of 1000 (max. 500000)
+ 179 words of extra memory for PDF output out of 10000 (max. 10000000)
 

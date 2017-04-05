@@ -1,9 +1,16 @@
-\frametitle{Fieldsets} 
+\frametitle{New form input types} 
 \bi
-\li Not necessary, but group parts of a form.
-\li Legend identifies the entire form.
-\li Label identifies each input form.
-\li Can use paragraphs to group labels and inputs.
-\li Label tag can have a {\tt for} attribute to connect with a
-specific input.
+\li date
+\li time
+\li datetime
+\li datetime-local
+\li week
+\li month
+\li color
+\li number
+\li range
+\li search
+\li email
+\li tel
+\li url
 \ei
