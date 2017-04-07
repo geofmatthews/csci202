@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\title{CSCI 202, Spring 2017, Lab \# 1}
+\author{Geoffrey Matthews}
+
+\begin{document}
+\maketitle
+
+\begin{description}
+
+\item[Due date:] Midnight, Monday, April 17.
+
+\item[Goals:] Get familiar with the basics of HTML.
+
+\item[Zip your folder:]
+
+  Create all your files in a single folder and
+  make a compressed (zip) archive of the folder.
+  
+  On Windows,
+  right-click on the folder, select ``Send to'', and then
+  ``Compressed (zipped) folder.''
+  
+  On a Mac, right-click the folder, select ``Compress items''.
+  
+  On either system, you will then see a newly created file with
+  the {\tt .zip} extension.  This is what you want to turn in to
+  canvas.
+  
+\item[Files:]  You will create five {\tt .html} files:
+  \begin{description}
+  \item[index.html]  This file will have an ordered list of links to
+    the other four files.
+  \item[page01.html] 
+  \end{description}      
+
+\end{description}

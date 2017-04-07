@@ -1,0 +1,98 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\title{CSCI 202, Spring 2017, Lab \# 1}
+\author{Geoffrey Matthews}
+
+\begin{document}
+\maketitle
+
+\begin{description}
+
+\item[Due date:] Midnight, Monday, April 17.
+
+\item[Goals:] Get familiar with the basics of HTML.
+
+\item[Zip your folder:]
+
+  Put all your files (including the image file) in a single folder and
+  make a compressed (zip) archive of the folder.
+  \begin{itemize}
+  \item
+  On Windows,
+  right-click on the folder, select ``Send to'', and then
+  ``Compressed (zipped) folder.''
+  \item
+  On a Mac, right-click the folder, select ``Compress items''.
+\item
+  On linux, enter ``{\tt zip foldername}'' on the command line.
+  \item
+  On each system, you will then see a newly created file with
+  the {\tt .zip} extension.  This is what you want to turn in to
+  canvas.
+  \end{itemize}
+  
+\item[Files:]  You will create five {\tt .html} files:
+  \begin{description}
+  \item[index.html]
+    The title and {\tt h1} header of this page will be {\bf Main}.
+    
+    This file will have an ordered list of links to
+    the other four files.
+
+  \item[page01.html]The title and {\tt h1} header of this page will be
+    {\bf Search Engines}.
+
+    This file will have an unordered list of links to
+    three search engines, such as {\bf google}.  Search the web for
+    search engines, and remember to put their complete URL in the
+    link.  (You can copy and paste links from your browser into your
+    file.) 
+
+  \item[page02.html] The title and {\tt h1} header of this page will
+    be {\bf Image Scaling}.
+
+    Find a nice image, not too big.  You can take one from the
+    internet, provided you have rights to it, or use one of your own
+    photos.
+
+    Create a definition list with the terms {\bf Small}, {\bf
+      Medium}, and {\bf Large}.  The item under each term will be your
+    image, inline, resized to half its original dimensions under small,
+    original size under medium, and double its original dimensions
+    under large.
+
+    The {\em same image} will be placed inline under each
+    item, but it will be resized by the {\tt width} and {\tt height}
+    attributes of the {\tt img} tag.
+
+    Be sure to provide {\tt alt} text for each image.
+    
+  \item[page03.html] The title and {\tt h1} header of this page will
+    be {\bf User Information}.
+
+    On this page create an input form asking for the user's name,
+    phone number, date of birth, and shoe size.
+    
+  \item[page04.html] The title and {\tt h1} header of this page will
+    be {\bf Schedule}.
+
+    On this page use a {\tt table} to create a schedule of your
+    classes this quarter.  The headers of the table will be {\bf
+      Class}, {\bf Hour}, {\bf Days}, {\bf Room}, and {\bf
+      Instructor}.  One row of your table will contain the entries
+    {\tt CSCI 202}, {\tt 9:00am}, {\tt MWF}, {\tt CF227}, and {\tt
+      Matthews} .
+
+  \end{description}      
+
+  At the bottom of each of the four numbered pages you will also have
+  a {\bf next} link, which will take you to the next page in a cyclic
+  order ($1\rightarrow 2 \rightarrow 3\rightarrow 4\rightarrow
+  1\rightarrow$ {\em etc.}), and
+  a {\bf top} link, which takes you back to the index page.
+
+  All pages should pass the W3C validator with no errors.
+
+\end{description}
+
+\end{document}
