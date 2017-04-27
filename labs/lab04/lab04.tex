@@ -1,0 +1,76 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx,hyperref}
+\title{CSCI 202, Spring 2017, Lab \# 4}
+\author{Geoffrey Matthews}
+
+\begin{document}
+\maketitle
+
+\begin{description}
+
+\item[Due date:] Midnight, Monday, May 8.
+
+\item[Goals:] Getting started with Javascript.
+
+\item[Zip your folder:]
+  Put all your files (including the supporting files) in a single
+  folder and  make a compressed (zip) archive of the folder.
+
+\item[Files to turn in:]\mbox{}
+  \begin{itemize}
+  \item
+    One  {HTML} file: {\tt lab04.html}.
+    It will be modified from the supplied {\tt penguins.html} file.
+  \item
+    One  style file, {\tt lab04.css}.  It
+    will be modified from the supplied {\tt penguins.css} file.
+\item One  Javascript file, {\tt lab04.js}, entirely of your own
+  creation. 
+\item The {\tt images} folder of supporting images should be included
+  in your turnin folder, so that the page can be used immediately by
+  the grader.
+  \end{itemize}
+
+\item[Lab steps:]\mbox{}
+  \begin{itemize}
+  \item Download and unzip the {\tt penguins.zip} file on the archive.
+    \item
+  After unzipping the {\tt penguins.zip} file you will find it
+  contains HTML, CSS, and some supporting images.  Play with the web
+  site a bit to get the idea of what is supposed to happen.
+\item
+  Copy the {\tt penguins.html} file to your own {\tt lab04.html} file.
+\item
+  Copy the {\tt penguins.css} file to your own {\tt lab04.css} file.
+  Modify your {\tt lab04.html} file so it loads your {\tt lab04.css}
+  script. 
+\item
+All of the interactivity for the penguins webpage is provided by 
+the pseudo classes {\tt hover} and {\tt active}.  You are to replace
+this with Javascript.
+\item Delete the selectors in {\tt lab04.css} that use {\tt hover} and
+  {\tt active}.
+\item For each of the {\tt penguin} divs in your {\tt lab04.html}
+  file, add {\tt onmouseover}, {\tt onmouseout} and
+  {\tt onclick} events, and have each
+  one of them call an appropriately named Javascript function.
+\item Create a Javascript file {\tt lab04.js}, and make sure you load
+  this script in your {\tt lab04.html} file.
+\item In this Javascript file, create the functions needed by your
+    penguins to change images to the question mark when the mouse
+    enters, back to the default when the mouse leaves, and to the
+    penguin (or yeti) when clicked.
+    \item {\em Unlike} the original web page, your penguin (or yeti)
+      will remain after clicking.
+  \end{itemize}
+  
+
+
+\item[Acknowledgements:] Supporting files and ideas for this lab came
+  from\\ \url{https://googlecreativelab.github.io/coder-projects/}
+
+
+\end{description}
+
+\end{document}
