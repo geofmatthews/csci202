@@ -1,6 +1,6 @@
 \documentclass{article}
 \usepackage[margin=1in]{geometry}
-\usepackage{graphicx,hyperref,fancyvrb}
+\usepackage{graphicx,hyperref}
 \title{CSCI 202, Spring 2017, Lab \# 4}
 \author{Geoffrey Matthews}
 
@@ -38,7 +38,7 @@
     \item
   After unzipping the {\tt penguins.zip} file you will find it
   contains HTML, CSS, and some supporting images.  Play with the web
-  page a bit to get the idea of what is supposed to happen.
+  site a bit to get the idea of what is supposed to happen.
 \item
   Copy the {\tt penguins.html} file to your own {\tt lab04.html} file.
 \item
@@ -51,55 +51,18 @@ the pseudo classes {\tt hover} and {\tt active}.  You are to replace
 this with Javascript.
 \item Delete the selectors in {\tt lab04.css} that use {\tt hover} and
   {\tt active}.
-\item Change all of the ``class'' attributes of the penguins (and
-  yeti) to ``id''.  This will make it easy for your javascript to find
-  them. 
 \item For each of the {\tt penguin} divs in your {\tt lab04.html}
   file, add {\tt onmouseover}, {\tt onmouseout} and
   {\tt onclick} events, and have each
   one of them call an appropriately named Javascript function.
 \item Create a Javascript file {\tt lab04.js}, and make sure you load
   this script in your {\tt lab04.html} file.
-\end{itemize}
-\item[Javascript coding:]\mbox{}
-\begin{itemize}
-
-\item In the Javascript file, create the functions needed by your
+\item In this Javascript file, create the functions needed by your
     penguins to change images to the question mark when the mouse
     enters, back to the default when the mouse leaves, and to the
     penguin (or yeti) when clicked.
-
-  \item {\em Unlike} the original web page, your penguin (or yeti)
-    will remain after clicking.
-
-  \item In order for your Javascript to remember when a particular
-    penguin has been clicked, you will use boolean variables, {\tt
-      p1Clicked}, {\tt p2Clicked}, {\em etc.}  All of these will be
-    set to {\tt false} at the top of the script.  Each of the
-    functions will check this variable first, and not do anything if
-    it has been clicked.
-
-    \item The {\em clicked} function will set its variable to {\tt
-      true}, in addition to changing the image to the penguin (or
-      yeti). 
-
-\item Remember to set a style element with javascript, you use the
-  following pattern.  If the style is set like this:
-  \begin{Verbatim}[frame=single]
-#foo { background-image : url('mypicture.png') }
-  \end{Verbatim}
-  Then the equivalent Javascript code would look like this:
-  \begin{Verbatim}[frame=single]
-document.getElementById("foo").style.backgroundImage = "url('mypicture.png')"
-  \end{Verbatim}
-  Observe the use of single and double quotes, and the fact that
-  style names such as {\tt background-image} have to be converted to
-  camel case.
-    
-  \item {\bf Big Hint:} to make this a LOT easier, get it working for ONE
-    penguin first!  Once you've got it correct, copying and
-    pasting, and changing the penguin number will make the other
-    penguins (and yeti) a lot easier.
+    \item {\em Unlike} the original web page, your penguin (or yeti)
+      will remain after clicking.
   \end{itemize}
   
 
