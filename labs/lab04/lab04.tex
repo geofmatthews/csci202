@@ -54,10 +54,11 @@ this with Javascript.
 \item Change all of the ``class'' attributes of the penguins (and
   yeti) to ``id''.  This will make it easy for your javascript to find
   them. 
-\item For each of the {\tt penguin} divs in your {\tt lab04.html}
-  file, add {\tt onmouseover}, {\tt onmouseout} and
-  {\tt onclick} events, and have each
-  one of them call an appropriately named Javascript function.
+\item For each of the {\tt penguin} divs (and the yeti) in your {\tt
+  lab04.html} file, add {\tt onmouseover}, {\tt onmouseout} and {\tt
+  onclick} events, and have each one of them call an appropriately
+  named Javascript function, {\em e.g.} {\tt mouseOver1, mouseOut1,
+    click1, mouseOver2}, {\em etc.}
 \item Create a Javascript file {\tt lab04.js}, and make sure you load
   this script in your {\tt lab04.html} file.
 \end{itemize}
@@ -79,7 +80,10 @@ this with Javascript.
     functions will check this variable first, and not do anything if
     it has been clicked.
 
-    \item The {\em clicked} function will set its variable to {\tt
+  \item The {\em clicked} function will set its variable
+    ({\tt
+      p1Clicked}, {\tt p2Clicked}, {\em etc.} )
+    to {\tt
       true}, in addition to changing the image to the penguin (or
       yeti). 
 
@@ -90,10 +94,10 @@ this with Javascript.
   \end{Verbatim}
   Then the equivalent Javascript code would look like this:
   \begin{Verbatim}[frame=single]
-document.getElementById("foo").style.backgroundImage = "url('mypicture.png')"
+document.getElementById("foo").style.backgroundImage = "url('mypicture.png')";
   \end{Verbatim}
-  Observe the use of single and double quotes, and the fact that
-  style names such as {\tt background-image} have to be converted to
+  Observe the use of single and double quotes in the url, and the fact
+  that style names such as {\tt background-image} have to be converted to
   camel case.
     
   \item {\bf Big Hint:} to make this a LOT easier, get it working for ONE
@@ -102,8 +106,22 @@ document.getElementById("foo").style.backgroundImage = "url('mypicture.png')"
     penguins (and yeti) a lot easier.
   \end{itemize}
   
+\item[Optional (for advanced students):]
+  You can make this assignment a bit shorter by using
+  arrays and function parameters.  For example, instead of the eight
+  functions {\tt mouseOver1}, {\tt mouseOver2}, {\em etc.}, you can
+  write a single function {\tt mouseOver} that takes a single
+  parameter, the number of the penguin.
 
-
+  If you do this, you can also approach the images in two ways.  One
+  is to construct the appropriate image name from the number, for
+  example: \verb|"images/mound_" + num + ".png"|.  Another, more
+  general way, is to use an array of image names:
+  \begin{Verbatim}
+    ["images/mound_1.png", "images/mound_2.png", "images/mound_3.png", ...]
+  \end{Verbatim}
+  If you do this, remember that arrays in Javascript are indexed from
+  0. 
 \item[Acknowledgements:] Supporting files and ideas for this lab came
   from\\ \url{https://googlecreativelab.github.io/coder-projects/}
 
