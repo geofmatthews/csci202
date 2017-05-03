@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #container {
+      width: 128px;
+      height: 128px;
+      background-image : url("d0.png");
+      }
+      body {
+      background-color : #88bbff;
+      }
+      
+    </style>
+    
+    <script>
+      imgs = ["d0.png","d1.png","d2.png","d3.png","d4.png",
+              "d5.png","d6.png","d7.png","d8.png"];
+      
+      window.onload = myMove;
+  
+      function myMove() {
+          var elem = document.getElementById("container");   
+          var i = 0;
+          var id = setInterval(frame, 100);
+          function frame() {
+              if (i == 1000) {
+                  clearInterval(id);
+              } else {
+                  i++; 
+              elem.style.backgroundImage = "url('" + imgs[i % 8] + "')";
+              }
+          }
+      }
+    </script>
+  </head>    
+  <body>
+    
+    <div id ="container">
+    </div>
+    
+  </body>
+</html>

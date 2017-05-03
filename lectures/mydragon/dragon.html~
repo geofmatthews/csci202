@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<style>
+#container {
+  width: 128px;
+  height: 128px;
+position: relative;
+background-image : url("d0.png");
+}
+
+</style>
+<body>
+
+<p>
+<button onclick="myMove()">Click Me</button>
+</p> 
+
+<div id ="container">
+</div>
+
+<script>
+  imgs = ["d0.png","d1.png","d2.png","d3.png","d4.png","d5.png","d6.png","d7.png","d8.png"];
+  
+function myMove() {
+  var elem = document.getElementById("container");   
+  var i = 0;
+  var id = setInterval(frame, 100);
+  function frame() {
+    if (i == 1000) {
+      clearInterval(id);
+    } else {
+      i++; 
+      elem.style.backgroundImage = "url('" + imgs[i % 8] + "')";
+    }
+  }
+}
+</script>
+
+</body>
+</html>
